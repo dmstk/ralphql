@@ -12,6 +12,14 @@ RSpec.describe Ralphql::Node do
     end
   end
 
+  it 'works' do
+    node = described_class.new(:query_name, atts: %i[id name])
+    node.add described_class.new(:items, atts: %i[title body], args: { first: 3 }, paginated: true)
+
+    expect { node.query }.not_to raise_error(Ralphql::EmptyNodeError)
+    %w[queryName id name title body first items].each { |item| expect(node.query).to include(item) }
+  end
+
   it 'raises error when there are no atts or nodes' do
     expect { subject.query }.to raise_error(Ralphql::EmptyNodeError)
   end
