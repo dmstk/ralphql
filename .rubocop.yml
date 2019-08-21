@@ -1,2 +1,11 @@
 Metrics/LineLength:
   Max: 120
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Style/Documentation:
+  Enabled: false

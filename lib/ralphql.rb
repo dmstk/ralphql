@@ -2,8 +2,9 @@
 
 require 'ralphql/version'
 require 'ralphql/node'
+require 'ralphql/inflections'
 
 module Ralphql
   class AttributeNotSupportedError < StandardError; end
-  class EmptyBodyError < StandardError; end
+  class EmptyNodeError < StandardError; end
 end
