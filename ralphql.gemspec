@@ -12,10 +12,10 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'A ruby DSL for graphQL queries'
   spec.description   = 'A ruby DSL for graphQL queries'
-  spec.homepage      = 'https://github.com'
+  spec.homepage      = 'https://github.com/wolas/ralphql'
   spec.license       = 'MIT'
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata['allowed_push_host'] = "https://rubygems.org"
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
