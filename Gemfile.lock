@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ralphql (0.1.1)
+    ralphql (0.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -92,4 +92,4 @@ DEPENDENCIES
   rubocop
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
